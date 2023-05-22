@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        h1 {
+            color: black;
+            text-shadow: 2px 2px 4px white;
+            text-align: center;
+            margin: 20px;
+            border-bottom: 5px solid black;
+            display: inline-block;
+        }
+
+        .Home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 100%; */
+            /* position: relative; */
+            height: 97vh;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        a {
+            padding: 10px;
+            background-color: rgb(3, 3, 3);
+            margin: 10px;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* animation */
+        .waviy {
+            /* position: relative; */
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+            font-size: 60px;
+        }
+
+        .waviy span {
+            /* font-family: 'Alfa Slab One', cursive; */
+            /* position: relative; */
+            display: inline-block;
+            color: #050505;
+            text-transform: uppercase;
+            animation: waviy 1s infinite;
+            animation-delay: calc(.1s * var(--i));
+            letter-spacing: -10px;
+        }
+
+        @keyframes waviy {
+
+            0%,
+            40%,
+            100% {
+                transform: translateY(0)
+            }
+
+            20% {
+                transform: translateY(-20px)
+            }
+        }
+
+
+        /* animation */
+
+        .Header__socials {
+            position: absliute;
+            bottom: 0;
+            left: 0;
+        }
+
+        /* ---------------Product------------------ */
+        marquee {
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        marquee p {
+            /* background-clior: chocliate; */
+            color: black;
+
+            font-size: 1.5rem;
+            border-radius: 10px;
+            padding: 5px;
+            display: inline-block;
+        }
+
+        /* <!-- ----------------------------safty-------------------------------------- --> */
+
+        .safty {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .safty ul {
+            list-style: none;
+            font-size: medium;
+        }
+
+        /* -----------------------Book----------------------------- */
+
+        .Booking {
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            /* background-clior: darkorange; */
+            /* overflow: auto; */
+        }
+
+        .Booking .flexB {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-wrap: wrap; */
+        }
+
+        .Bookingthought {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .Bookingthought:hover {
+            background-color: rgba(0, 0, 0, 0.685);
+            color: white;
+        }
+
+
+        /* ---------------------------------conatct Us-------------------------------------- */
+
+
+        .contactUs {
+            width: 100%;
+        }
+
+        .Contackaro {
+            margin: 20px;
+        }
+
+        .fontred {
+            color: red;
+            font-weight: bolder;
+        }
+
+        /* --------------------------------Buesines Hours---------------------------------------- */
+
+        .Times {
+            text-align: center;
+        }
+
+        .Times p {
+            margin: 10px;
+            font-weight: bolder;
+        }
+
+        /* -----------------------------Footer ------------------------------------ */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+
+        .footer a {
+            background-color: transparent;
+            color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Home">
+        <div>
+            <div class="waviy">
+                <span style="--i:1">M</span>
+                <span style="--i:2">A</span>
+                <span style="--i:3">T</span>
+                <span style="--i:4">A</span>
+                <span style="--i:5">N</span>
+                <span style="--i:6">g</span>
+                <span style="--i:7">i</span>
+                <span style="--i:5"></span>
+                <span style="--i:5"></span>
+                <span style="--i:8"></span>
+                <span style="--i:9">I</span>
+                <span style="--i:9">N</span>
+                <span style="--i:9">D</span>
+                <span style="--i:9">A</span>
+                <span style="--i:9">n</span>
+                <span style="--i:9">e</span>
+            </div>
+            <div>
+                <a href="/">Product</a>
+                <a href="/">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------Product---------------------- -->
+    <div class="Product">
+        <h1>Product</h1>
+        <marquee behavior="alternate">
+            <p>10 KG COMPOSITE LPG CYL</p>
+            <p>14.2 Kg LPG Cylinder</p>
+            <p>9 Kg XtraTeJ LPG Cylinder</p>
+            <p>19 Kg LPG Cylinder</p>
+            <p>9 Kg LPG Nanocut Cylinder</p>
+            <p>5 KG REFILL FTL (POS) ND FILLED CYL</p>
+            <p>Kg LPG Cylinder </p>
+        </marquee>
+        <br>
+
+        <marquee behavior="alternate">
+            <p>NFR Product:</p>
+            <p>LPG Stove PREMIUM</p>
+            <p>LPG Pressure Regulator</p>
+            <p>PMUY LPG Stove</p>
+            <p>LPG-Hose 1.2 MTR</p>
+            <p>LPG HOSE 1.5 M</p>
+        </marquee>
+    </div>
+
+
+
+
+
+
+    <!-- -----------------------Book------------------------- -->
+    <div class="Booking">
+        <h1>Cylinder Booking</h1>
+        <p>Hindi / Gujrati / English available </p>
+        <div class="flexB">
+            <a href="./Booking//RefillSMS.html" class="Bookingthought">
+                <div>
+                    <h3>Refill booking through SMS </h3>
+                    <p>Number: 7718955555</p>
+                    <p>How TO ? click</p>
+                </div>
+            </a>
+
+            <a href="./Booking//RefillIVRS.html" class="Bookingthought">
+                <div>
+                    <h3>Refill booking through IVRS </h3>
+                    <p>Number: 7718955555</p>
+                    <p>How TO ? click</p>
+                </div>
+            </a>
+            <a href="./Booking//Mobileapp.html" class="Bookingthought">
+                <div>
+                    <h3> Mobile app for Android & iphones & web </h3>
+                    <p>Indane one</p>
+                    <p>More click</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- ---------------------- Business Hours ------------------------------- -->
+        <div class="Times">
+            <div>
+                <h1>Business Hours</h1>
+                <p>Mon: Closed</p>
+                <p> Tue: 9:00 AM - 5:00 PM <br>
+                    Wed: 9:00 AM - 5:00 PM <br>
+                    Thu: 9:00 AM - 5:00 PM <br>
+                    Fri: 9:00 AM - 5:00 PM <br>
+                    Sat: 9:00 AM - 5:00 PM <br>
+                    Sun: 9:00 AM - 5:00 PM <br></p>
+            </div>
+        </div>
+
+
+        <!-- ------------------------------------ LPG safty -------------------------------------------- -->
+
+
+        <div class="safty">
+            <h1>LpG safty</h1>
+            <div>
+                <ul>
+                    <li> Disconnect LPG regulator and affix safety cap on the cylinder when your gas stove is not in use
+                        for
+                        long </li>
+                    <li>Always store the LPG cylinder in an upright position and away from other combustible and
+                        flammable
+                        materials</li>
+                    <li>As good practice, change the suraksha tubes once a year .</li>
+                    <li>Always use ISI approved tubes, stoves, regulators and LPG appliances.</li>
+                    <li>Make sure all parts of your LPG system are in good condition.</li>
+                    <li>Never tamper with your LPG cylinder.</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- ------------------------------- Contact us------------------------------------------ -->
+        <div class="contactus">
+            <div class="contact">
+                <h1>Contact us</h1>
+                <div>
+
+                    <h4>Addhares</h4>
+                    <h5>Dharisana,Gandhinager ,Gujrat-382315</h5>
+                </div>
+                <div class="Contackaro">
+                    <a href="tel:+919974416299">CaLL</a>
+                    <a href="tel:+919974416299">Office number</a>
+                    <a href="">Text</a>
+                    <a href="">Whates UP</a>
+                    <p class="fontred">please contact in BUsiness hous</p>
+                </div>
+            </div>
+            <div class="Complince">
+                <a href="">Text</a>
+                <a href="">Whates UP</a>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+            <div>
+                <hr>
+                <footer>
+                    <p>give Reviws & feedback
+                        <a href="mailto:sachintrivedi441@gmail.com"> @Mail </a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+</body>
+
+</html>
